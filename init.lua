@@ -24,6 +24,12 @@ vim.keymap.set("n", "<leader>s", ':w<CR>:Prettier<CR>')
 
 vim.keymap.set("x", "<leader>y", '"+y')
 
+vim.api.nvim_set_keymap('i', '"', '""<left>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', "'", "''<left>", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '(', '()<left>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '[', '[]<left>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '{', '{}<left>', { noremap = true, silent = true })
+
 -- vim.cmd('colorscheme poimandres')
 vim.cmd('colorscheme catppuccin')
 
